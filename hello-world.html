@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá Mundo em Diferentes Linguagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f6fa;
+        }
+
+        h1 {
+            color: #00b894;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2d3436;
+            font-size: 1.1em;
+        }
+
+        .code-container {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .code-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .language-title {
+            color: #0984e3;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .language-title i {
+            font-size: 1.2em;
+        }
+
+        .language-description {
+            color: #636e72;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        pre {
+            margin: 0;
+            border-radius: 8px;
+            background: #2d3436 !important;
+        }
+
+        code {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.95em;
+        }
+
+        .difficulty {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+
+        .easy { background: #00b894; color: white; }
+        .medium { background: #fdcb6e; color: #2d3436; }
+        .hard { background: #d63031; color: white; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .code-container {
+                padding: 15px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <h1>Olá Mundo em Diferentes Linguagens</h1>
+    <p class="intro">Explore como escrever "Olá Mundo" em várias linguagens de programação. Cada exemplo inclui uma breve descrição e nível de dificuldade.</p>
+
+    <div class="grid">
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fab fa-python"></i>
+                Python
+                <span class="difficulty easy">Fácil</span>
+            </div>
+            <p class="language-description">Python é uma linguagem de alto nível, interpretada e de propósito geral. É conhecida por sua sintaxe simples e legível.</p>
+            <pre><code class="language-python">print("Olá, Mundo!")</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fab fa-js"></i>
+                JavaScript
+                <span class="difficulty easy">Fácil</span>
+            </div>
+            <p class="language-description">JavaScript é a linguagem principal da web, permitindo interatividade em páginas web e aplicações.</p>
+            <pre><code class="language-javascript">console.log("Olá, Mundo!");</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fab fa-java"></i>
+                Java
+                <span class="difficulty medium">Médio</span>
+            </div>
+            <p class="language-description">Java é uma linguagem orientada a objetos, compilada e multiplataforma, muito usada em aplicações empresariais.</p>
+            <pre><code class="language-java">public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Olá, Mundo!");
+    }
+}</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fas fa-hashtag"></i>
+                C#
+                <span class="difficulty medium">Médio</span>
+            </div>
+            <p class="language-description">C# é uma linguagem moderna da Microsoft, usada principalmente para desenvolvimento Windows e jogos com Unity.</p>
+            <pre><code class="language-csharp">using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Olá, Mundo!");
+    }
+}</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fab fa-html5"></i>
+                HTML
+                <span class="difficulty easy">Fácil</span>
+            </div>
+            <p class="language-description">HTML é a linguagem de marcação padrão para criar páginas web e aplicações web.</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Olá Mundo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fab fa-php"></i>
+                PHP
+                <span class="difficulty medium">Médio</span>
+            </div>
+            <p class="language-description">PHP é uma linguagem de script do lado do servidor, amplamente usada para desenvolvimento web.</p>
+            <pre><code class="language-php">&lt;?php
+echo "Olá, Mundo!";
+?&gt;</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fas fa-gem"></i>
+                Ruby
+                <span class="difficulty easy">Fácil</span>
+            </div>
+            <p class="language-description">Ruby é uma linguagem dinâmica e orientada a objetos, conhecida por sua elegância e simplicidade.</p>
+            <pre><code class="language-ruby">puts "Olá, Mundo!"</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fas fa-code"></i>
+                Go
+                <span class="difficulty medium">Médio</span>
+            </div>
+            <p class="language-description">Go é uma linguagem compilada desenvolvida pelo Google, conhecida por sua simplicidade e eficiência.</p>
+            <pre><code class="language-go">package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Olá, Mundo!")
+}</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fas fa-shield-alt"></i>
+                Rust
+                <span class="difficulty hard">Difícil</span>
+            </div>
+            <p class="language-description">Rust é uma linguagem de sistemas que enfatiza segurança, concorrência e performance.</p>
+            <pre><code class="language-rust">fn main() {
+    println!("Olá, Mundo!");
+}</code></pre>
+        </div>
+
+        <div class="code-container">
+            <div class="language-title">
+                <i class="fab fa-apple"></i>
+                Swift
+                <span class="difficulty medium">Médio</span>
+            </div>
+            <p class="language-description">Swift é a linguagem moderna da Apple para desenvolvimento iOS, macOS e watchOS.</p>
+            <pre><code class="language-swift">print("Olá, Mundo!")</code></pre>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-go.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-rust.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-swift.min.js"></script>
+</body>
+</html> 
